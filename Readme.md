@@ -1,4 +1,6 @@
-iSi_Technology Simple Chat Test
+# iSi_Technology Simple Chat Test
+## Description
+
 
 The application is designed to provide functionality for creating and managing threads and 
 messages between two participants. The app contains two models: Thread and Message. 
@@ -21,5 +23,37 @@ test data for the application.
 Overall, the app provides a comprehensive solution for managing threads 
 and messages between two participants.
 
-Install and run app:
-1. 
+## Install and run app for development:
+
+Dependence: Python3.10
+
+```sh
+git clone https://github.com/ninnnnnnr/iSi_Technology.git
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python SimpleChat/manage.py runserver
+```
+
+## Routings
+
+ *Account:*
+ - api/register/
+ - api/token/
+ - api/token/refresh/
+
+  *ThreadListApiView:*
+ - api/threads_list
+ 
+  *MessageListApiView:*
+ - api/messages_list
+ 
+  *UnreadMessagesApiView:*
+ - api/unread
+
+
+
+
+
+
+
